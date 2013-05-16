@@ -12,14 +12,14 @@ class Appointment(models.Model):
 	sales_rep = models.ForeignKey(User)
 
 	
-    """
+"""
 	def check_visit_date_and_comment(self):
         if not visit_date and comment:
             raise ValidationError('Comment must be null')
 
     def clean(self):
         check_visit_date_and_comment()
-    """
+"""
 
 	
 
