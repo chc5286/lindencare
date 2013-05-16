@@ -4,7 +4,7 @@ from salesrep.models import CommissionTag
 
 class Patient(Person,Address):
     opus_key = models.IntegerField()
-    commission_tag = models.ForeignKey(CommissionTag)
+    commission_tag = models.ForeignKey(CommissionTag,null=True,blank=True)
 
     def __unicode__(self):
         return self.fullName

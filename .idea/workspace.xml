@@ -5,8 +5,8 @@
     <ignored path="lindencare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368727499813" ignored="false" />
-    <file path="/models.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368580904889" ignored="false" />
-    <file path="/admin.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368406918922" ignored="false" />
+    <file path="/models.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368733617008" ignored="false" />
+    <file path="/admin.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368731587395" ignored="false" />
     <file path="/settings.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368371109429" ignored="false" />
     <file path="/settings_local.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368727552063" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +36,16 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+            <state line="12" column="15" selection-start="332" selection-end="332" vertical-scroll-proportion="-8.16">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tasks/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="48" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.7167139">
               <folding />
             </state>
           </provider>
@@ -54,7 +63,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+            <state line="51" column="4" selection-start="1779" selection-end="1779" vertical-scroll-proportion="-31.28">
               <folding />
             </state>
           </provider>
@@ -71,29 +80,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings_local.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lindencare/settings_local.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="649" selection-end="649" vertical-scroll-proportion="-12.24">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insurance/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="-10.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practices/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="86" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.674221">
+            <state line="42" column="86" selection-start="1523" selection-end="1523" vertical-scroll-proportion="-19.04">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="18" selection-start="214" selection-end="214" vertical-scroll-proportion="-4.76">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +112,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patient/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+            <state line="6" column="73" selection-start="253" selection-end="253" vertical-scroll-proportion="-2.72">
               <folding />
             </state>
           </provider>
@@ -128,20 +139,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/region/models.py" />
-        <option value="$PROJECT_DIR$/patient/models.py" />
         <option value="$PROJECT_DIR$/insurance/models.py" />
         <option value="$PROJECT_DIR$/salesrep/models.py" />
         <option value="$PROJECT_DIR$/lindencare/settings.py" />
         <option value="$PROJECT_DIR$/script/admin.py" />
         <option value="$PROJECT_DIR$/insurance/admin.py" />
         <option value="$PROJECT_DIR$/drugrep/models.py" />
-        <option value="$PROJECT_DIR$/tasks/models.py" />
         <option value="$PROJECT_DIR$/practices/models.py" />
         <option value="$PROJECT_DIR$/appointment/models.py" />
         <option value="$PROJECT_DIR$/core/models.py" />
         <option value="$PROJECT_DIR$/script/models.py" />
         <option value="$PROJECT_DIR$/lindencare/settings_local.py" />
         <option value="$PROJECT_DIR$/practices/admin.py" />
+        <option value="$PROJECT_DIR$/tasks/admin.py" />
+        <option value="$PROJECT_DIR$/tasks/models.py" />
+        <option value="$PROJECT_DIR$/patient/models.py" />
       </list>
     </option>
   </component>
@@ -189,34 +201,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="lindencare" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practices" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lindencare" />
@@ -364,7 +348,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="405" width="1456" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -448,31 +432,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tasks/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/region/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="30" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insurance/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drugrep/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="5" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.74626863" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="15" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lindencare/settings.py">
@@ -495,30 +462,39 @@
         <state line="7" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.14761215" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patient/models.py">
+    <entry file="file://$PROJECT_DIR$/salesrep/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="214" selection-end="214" vertical-scroll-proportion="-4.76">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+        <state line="51" column="4" selection-start="1779" selection-end="1779" vertical-scroll-proportion="-31.28">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/models.py">
+    <entry file="file://$PROJECT_DIR$/patient/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+        <state line="6" column="73" selection-start="253" selection-end="253" vertical-scroll-proportion="-2.72">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salesrep/models.py">
+    <entry file="file://$PROJECT_DIR$/lindencare/settings_local.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+        <state line="18" column="1" selection-start="649" selection-end="649" vertical-scroll-proportion="0.44671533">
           <folding />
         </state>
       </provider>
@@ -532,16 +508,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lindencare/settings_local.py">
+    <entry file="file://$PROJECT_DIR$/practices/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="649" selection-end="649" vertical-scroll-proportion="-12.24">
+        <state line="42" column="86" selection-start="1523" selection-end="1523" vertical-scroll-proportion="-19.04">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practices/admin.py">
+    <entry file="file://$PROJECT_DIR$/insurance/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="86" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.674221">
+        <state line="15" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="-10.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="15" selection-start="332" selection-end="332" vertical-scroll-proportion="-8.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="48" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.7167139">
           <folding />
         </state>
       </provider>
