@@ -1,8 +1,8 @@
 import datetime
 from django.db import models
-from django.conf import settings
+from django.contrib.auth.models import User
 from practices.models import Practice
-from salesrep.models import SalesRep
+
 
 class Category(models.Model):
     description = models.CharField(max_length = 200,unique=True)
@@ -32,7 +32,7 @@ class Task(models.Model):
     practice = models.ForeignKey(Practice,null=True)
     category = models.ForeignKey(Category,null=True)
     urgency = models.CharField(choices=URGENCY_CHOICES,default=LOW,max_length = 200)
-    sales_rep = models.ForeignKey(SalesRep,null=True) #use settings.AUTH_USER_MODEL once user model is set up
+    sales_rep = models.ForeignKey(User,null=True)
     
 
     def __unicode__(self):

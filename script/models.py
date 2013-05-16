@@ -49,8 +49,12 @@ class ScriptPayment(models.Model):
     class Meta:
         verbose_name_plural = "Script Payments"
 
-
-
+    """
+    def balance(self):
+        for payment in Payments.objects.filter(script_payment=self):
+            paid_ammount += payment.value
+        return self.amount - paid_amount
+    """
 
 
 
