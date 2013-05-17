@@ -126,15 +126,15 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 	'tasks',
 	'practices',
-	'salesrep',
-	'appointment',
+	'salesreps',
+	'appointments',
 	'core',
-	'drugrep',
-	'patient',
-	'payment',
-	'script',
-	'region',
-	'patient',
+	'drugreps',
+	'patients',
+	'payments',
+	'prescriptions',
+	'regions',
+	'patients',
     'insurance'
 )
 

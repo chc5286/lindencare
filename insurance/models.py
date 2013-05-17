@@ -9,7 +9,7 @@ class Payor(models.Model):
 
 class BinNumber(models.Model):
     bin_number = models.IntegerField()
-    payor = models.ForeignKey(Payor)
+    payor = models.ForeignKey(Payor,null=True,blank=True)
 
     def __unicode__(self):
         return self.bin_number
@@ -20,7 +20,7 @@ class BinNumber(models.Model):
 class Insuror(models.Model):
     carrier_code = models.CharField(max_length=2)
     plan_code = models.CharField(max_length=20,blank=True)
-    bin_number = models.ForeignKey(BinNumber)
+    bin_number = models.ForeignKey(BinNumber,null=True,blank=True)
 
     def __unicode__(self):
         return self.carrier_code + ' ' + self.plan_code

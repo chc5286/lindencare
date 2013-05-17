@@ -1,8 +1,8 @@
 from django.db import models
-from core.models import Person, Contact, Address
-from salesrep.models import CommissionTag
-from drugrep.models import DrugRep
-from region.models import SubRegion
+from core.models import Contact, Address
+from salesreps.models import CommissionTag
+from drugreps.models import DrugRep
+from regions.models import SubRegion
 
 class MultiPractice(models.Model):
     name = models.CharField(max_length = 200,unique=True)

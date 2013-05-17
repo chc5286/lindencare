@@ -4,11 +4,11 @@ class Person(models.Model):
     first_name = models.CharField("First Name",max_length=30)
     last_name = models.CharField("Last Name",max_length=30)
 
-    def fullName(self):
-        return self.firstName + ' ' + self.lastName
+    def full_name(self):
+        return self.first_name + ' ' + self.last_name
 
     def __unicode__(self):
-        return self.fullName()
+        return self.first_name + ' ' + self.last_name #getting error when trying to do return self.full_name
 
     class Meta:
         abstract = True
