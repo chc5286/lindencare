@@ -28,7 +28,7 @@ class Script(models.Model):
     def __unicode__(self):
         return str(self.script_number) + ' ' + str(self.refill_number)
 
-class ScriptPayment(models.Model):
+class ScriptTransaction(models.Model):
     """ Model for transactions made on scripts. Every adjustment, rebilling and
     deletion is handled here. All revenue is calculated from the amount field
     in this model.
@@ -47,7 +47,7 @@ class ScriptPayment(models.Model):
         return self.insurance #should change to related script/refill/insurance
 
     class Meta:
-        verbose_name_plural = "Script Payments"
+        verbose_name_plural = "Script Transactions"
 
     """
     def balance(self):
