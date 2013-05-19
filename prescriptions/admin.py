@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Script, ScriptPayment
+from .models import Script, ScriptTransaction
 
 admin.site.register(Script)
-admin.site.register(ScriptPayment)
+admin.site.register(ScriptTransaction)
 
 

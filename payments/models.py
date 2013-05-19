@@ -1,6 +1,6 @@
 from django.db import models
-from insurance import Payor
-from prescriptions import ScriptTransaction
+from insurance.models import Payor
+from prescriptions.models import ScriptTransaction
 
 
 class Batch(models.Model):
@@ -26,7 +26,14 @@ class Check(models.Model):
         return self.check_number
 
 
-class PaymentTransaction:
+class PaymentType(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __unicode__(self):
+        return self.name
+
+
+class PaymentTransaction(models.Model):
     script_transaction = models.ForeignKey(ScriptTransaction)
     check = models.ForeignKey(Check)
     amount = models.DecimalField(max_digits=10,decimal_places=2)
@@ -39,11 +46,7 @@ class PaymentTransaction:
 
 
 
-class PaymentType:
-    name = models.CharField(max_length=50)
 
-    def __unicode__(self):
-        return self.name
 
 
 
