@@ -1,7 +1,7 @@
 from django.db import models
 from core.models import Contact, Address
 from salesreps.models import CommissionTag
-from drugreps.models import DrugRep
+from drugcompanies.models import DrugRep
 from regions.models import SubRegion
 
 class MultiPractice(models.Model):

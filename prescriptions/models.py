@@ -1,5 +1,5 @@
 from django.db import models
-from drugreps.models import DrugNDC
+from drugcompanies.models import DrugNDC
 from salesreps.models import CommissionTag
 from practices.models import Doctor
 from patients.models import Patient

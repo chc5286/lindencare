@@ -129,7 +129,7 @@ INSTALLED_APPS = (
 	'salesreps',
 	'appointments',
 	'core',
-	'drugreps',
+	'drugcompanies',
 	'patients',
 	'payments',
 	'prescriptions',
