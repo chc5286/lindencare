@@ -3,7 +3,6 @@ from .models import Appointment
 
 
 class AppointmentAdmin(admin.ModelAdmin):
-    fields = ['practice','visit_date','comment','is_complete']
 
     def save_model(self, request, obj, form, change):
         """saves employee name who creates task"""
@@ -15,7 +14,9 @@ class AppointmentAdmin(admin.ModelAdmin):
         """Adds employee name field for super users"""
 
         if request.user.is_superuser:
-            self.fields.append('sales_rep')
+            self.fields = ['practice','visit_date','comment','is_complete','sales_rep']
+        else:
+            self.fields = ['practice','visit_date','comment','is_complete']
         return super(AppointmentAdmin, self).get_form(request, obj, **kwargs)
 
 
