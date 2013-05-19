@@ -10,7 +10,7 @@ mark_completed.short_description = "Mark Select Tasks Completed"
 
 class TaskAdmin(admin.ModelAdmin):
 
-    list_display = ['description','task_date','urgency','category','is_completed']
+    list_display = ['description','task_date','urgency','category','is_completed','sales_rep']
     list_filter = ['is_completed']
     actions = [mark_completed]
 
