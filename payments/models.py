@@ -22,7 +22,7 @@ class Check(models.Model):
     date = models.DateField()
     date_deposited = models.DateField()
     amount = models.DecimalField(max_digits=10,decimal_places=2)
-    fee = models.DecimalField(max_digits=10,decimal_places=2)
+    fee = models.DecimalField(max_digits=10,decimal_places=2,default=0)
     batch = models.ForeignKey(Batch,null=True,blank=True)
 
     def __unicode__(self):
@@ -44,7 +44,7 @@ class PaymentTransaction(models.Model):
     check = models.ForeignKey(Check)
     amount = models.DecimalField(max_digits=10,decimal_places=2)
     payment_type = models.ForeignKey(PaymentType)
-    received_date = models.DateField()
+    date_received = models.DateField()
     date_added = models.DateField() #use 3rd party module for this
 
     def __unicode__(self):
