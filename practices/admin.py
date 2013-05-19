@@ -46,5 +46,6 @@ class PracticeAdmin(admin.ModelAdmin):
     inlines = [DoctorInLine,PracticeContactInLine,]
 
     list_display = ['name','sub_region','ideal_visits','potential','is_inactive']
+    search_fields = ['name']
 
 admin.site.register(Practice, PracticeAdmin)
