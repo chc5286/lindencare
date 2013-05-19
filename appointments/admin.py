@@ -20,6 +20,17 @@ class AppointmentAdmin(admin.ModelAdmin):
         return super(AppointmentAdmin, self).get_form(request, obj, **kwargs)
 
 
+    def changelist_view(self, request, extra_context=None):
+        """Only appointments for specific rep are shown, superuser can see all tasks"""
+
+        if not request.user.is_superuser:
+            q = request.GET.copy()
+            q['sales_rep'] = request.user
+            request.GET = q
+            request.META['QUERY_STRING'] = request.GET.urlencode()
+        return super(AppointmentAdmin,self).changelist_view(request, extra_context=extra_context)
+
+
 admin.site.register(Appointment,AppointmentAdmin)
 
 
