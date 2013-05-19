@@ -28,7 +28,7 @@ class Practice(Address):
     multi_practice = models.ForeignKey(MultiPractice,null=True,blank=True)
     ideal_visits = models.IntegerField(default=0)
     potential = models.FloatField(null=True,blank=True)
-    is_inactive = models.BooleanField(default=False)
+    is_inactive = models.BooleanField("Inactive?")
     comment = models.TextField(blank=True)
     next_visit = models.TextField(blank=True)
     category = models.ManyToManyField(Category,null=True,blank=True)
