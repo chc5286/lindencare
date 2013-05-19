@@ -36,15 +36,14 @@ class DoctorInLine(admin.TabularInline):
 
 class PracticeAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None,              {'fields':['name','sub_region','category']}),
+        (None,              {'fields':['name','multi_practice']}),
         ('Potential',       {'fields':[('ideal_visits','potential')]}),
+        ('Address',         {'fields':['sub_region','address','address2',('city','state','zip_code')],'classes':['collapse']}),
+        ('Other',           {'fields':['drug_rep','category',('comment','next_visit')]}),
         ('Yes/No',          {'fields':['is_inactive']}),
-        ('Other',           {'fields':['drug_rep',('comment','next_visit')]}),
-        ('Address',         {'fields':['address','address2',('city','state','zip_code')],'classes':['collapse']})
         ]
 
     inlines = [DoctorInLine,PracticeContactInLine,]
-
 
     list_display = ['name','sub_region','ideal_visits','potential','is_inactive']
 

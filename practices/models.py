@@ -9,6 +9,9 @@ class MultiPractice(models.Model):
 
     def __unicode__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = "Multi-Practices"
 	
 class Category(models.Model):
     description = models.CharField(max_length = 200,unique=True)
@@ -22,15 +25,15 @@ class Category(models.Model):
 
 class Practice(Address):
     name = models.CharField(max_length = 200,unique=True)
-    multi_practice = models.ForeignKey(MultiPractice,null=True)
+    multi_practice = models.ForeignKey(MultiPractice,null=True,blank=True)
     ideal_visits = models.IntegerField(default=0)
-    potential = models.FloatField(null=True)
+    potential = models.FloatField(null=True,blank=True)
     is_inactive = models.BooleanField(default=False)
     comment = models.TextField(blank=True)
     next_visit = models.TextField(blank=True)
-    category = models.ManyToManyField(Category,null=True)
-    drug_rep = models.ManyToManyField(DrugRep,verbose_name="Drug Rep",null=True)
-    sub_region = models.ForeignKey(SubRegion,verbose_name="Sub-Region",null=True)
+    category = models.ManyToManyField(Category,null=True,blank=True)
+    drug_rep = models.ManyToManyField(DrugRep,verbose_name="Drug Rep",null=True,blank=True)
+    sub_region = models.ForeignKey(SubRegion,verbose_name="Sub-Region",null=True,blank=True)
     #phone
     #fax
 
@@ -66,7 +69,9 @@ class PracticeContact(Contact):
     
     def __unicode__(self):
         return self.fullName
-    
+
+    class Meta:
+        verbose_name_plural = "Practice Contacts"
     
 
 
