@@ -28,7 +28,7 @@ class Address(models.Model):
     address2 = models.CharField("address",max_length=50,blank=True)
     city = models.CharField(max_length=30,blank=True)
     state = models.CharField(max_length=2,blank=True)
-    zipCode = models.CharField(max_length=5,blank=True)
+    zip_code = models.CharField(max_length=5,blank=True)
 
     class Meta:
         abstract = True

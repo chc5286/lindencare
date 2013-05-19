@@ -40,7 +40,7 @@ class PracticeAdmin(admin.ModelAdmin):
         ('Potential',       {'fields':[('ideal_visits','potential')]}),
         ('Yes/No',          {'fields':['is_inactive']}),
         ('Other',           {'fields':['drug_rep',('comment','next_visit')]}),
-        ('Address',         {'fields':['address','address2',('city','state','zipCode')],'classes':['collapse']})
+        ('Address',         {'fields':['address','address2',('city','state','zip_code')],'classes':['collapse']})
         ]
 
     inlines = [DoctorInLine,PracticeContactInLine,]
