@@ -8,7 +8,7 @@ class Appointment(models.Model):
 	practice = models.ForeignKey(Practice)
 	visit_date = models.DateTimeField()
 	comment = models.TextField(blank=True)
-	is_complete = models.BooleanField()
+	is_complete = models.BooleanField("Completed?")
 	sales_rep = models.ForeignKey(User)
 
 	
