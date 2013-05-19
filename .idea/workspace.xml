@@ -5,8 +5,8 @@
     <ignored path="lindencare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368897868898" ignored="false" />
-    <file path="/models.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368940735699" ignored="false" />
-    <file path="/admin.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368981629007" ignored="false" />
+    <file path="/models.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368982905494" ignored="false" />
+    <file path="/admin.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368982923064" ignored="false" />
     <file path="/settings.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368806838537" ignored="false" />
     <file path="/settings_local.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368727552063" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,21 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/models.py">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/drugreps/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="20" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2641791">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drugreps/models.py">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drugreps/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+            <state line="24" column="41" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +58,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/payments/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="57" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+            <state line="23" column="64" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -76,6 +78,17 @@
         </entry>
       </file>
       <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practices/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patients/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="28" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
@@ -86,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patients/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.17221418">
+            <state line="7" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -148,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lindencare/settings_local.py" />
         <option value="$PROJECT_DIR$/practices/admin.py" />
         <option value="$PROJECT_DIR$/tasks/admin.py" />
         <option value="$PROJECT_DIR$/tasks/models.py" />
@@ -156,14 +168,15 @@
         <option value="$PROJECT_DIR$/practices/models.py" />
         <option value="$PROJECT_DIR$/lindencare/settings.py" />
         <option value="$PROJECT_DIR$/core/models.py" />
-        <option value="$PROJECT_DIR$/drugreps/models.py" />
         <option value="$PROJECT_DIR$/insurance/models.py" />
         <option value="$PROJECT_DIR$/prescriptions/models.py" />
         <option value="$PROJECT_DIR$/prescriptions/admin.py" />
-        <option value="$PROJECT_DIR$/payments/models.py" />
         <option value="$PROJECT_DIR$/payments/admin.py" />
         <option value="$PROJECT_DIR$/patients/models.py" />
         <option value="$PROJECT_DIR$/patients/admin.py" />
+        <option value="$PROJECT_DIR$/payments/models.py" />
+        <option value="$PROJECT_DIR$/drugreps/models.py" />
+        <option value="$PROJECT_DIR$/drugreps/admin.py" />
       </list>
     </option>
   </component>
@@ -227,7 +240,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="practices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lindencare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lindencare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="patients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lindencare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lindencare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugreps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,16 +517,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lindencare/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="30" selection-start="4234" selection-end="4234" vertical-scroll-proportion="0.1217656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drugreps/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insurance/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.18112633" />
@@ -525,15 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drugreps/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prescriptions/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="23" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
@@ -548,15 +570,6 @@
         <state line="7" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payments/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="57" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -581,7 +594,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/patients/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.17221418">
+        <state line="7" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payments/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="64" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drugreps/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="41" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drugreps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2641791">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

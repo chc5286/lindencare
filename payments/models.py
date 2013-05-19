@@ -12,6 +12,9 @@ class Batch(models.Model):
     def __unicode__(self):
         return self.code
 
+    class Meta:
+        verbose_name_plural = 'Batches'
+
 
 class Check(models.Model):
     check_number = models.CharField(max_length=40)
@@ -32,6 +35,9 @@ class PaymentType(models.Model):
     def __unicode__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = 'Payment Types'
+
 
 class PaymentTransaction(models.Model):
     script_transaction = models.ForeignKey(ScriptTransaction)
@@ -43,6 +49,9 @@ class PaymentTransaction(models.Model):
 
     def __unicode__(self):
         return self.script_transaction #script_number, refill_number, carrier_code + plan_code, amount
+
+    class Meta:
+        verbose_name_plural = 'Payment Transactions'
 
 
 
