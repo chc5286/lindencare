@@ -5,8 +5,8 @@
     <ignored path="lindencare.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368897868898" ignored="false" />
-    <file path="/models.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368990291585" ignored="false" />
-    <file path="/admin.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368991895751" ignored="false" />
+    <file path="/models.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368993450553" ignored="false" />
+    <file path="/admin.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368993618583" ignored="false" />
     <file path="/settings.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368984156595" ignored="false" />
     <file path="/settings_local.py" changelist="92e898f9-85e7-4632-8804-547bf0983a8b" time="1368727552063" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="41" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.7293777">
+            <state line="17" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -64,13 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/appointments/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1368991834898" expanded="true" signature="108:1138" placeholder="..." />
-              </folding>
+            <state line="7" column="31" selection-start="210" selection-end="210" vertical-scroll-proportion="0.14761215">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appointments/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="33" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,11 +137,11 @@
         <option value="$PROJECT_DIR$/lindencare/settings.py" />
         <option value="$PROJECT_DIR$/prescriptions/models.py" />
         <option value="$PROJECT_DIR$/practices/admin.py" />
-        <option value="$PROJECT_DIR$/appointments/models.py" />
         <option value="$PROJECT_DIR$/practices/models.py" />
         <option value="$PROJECT_DIR$/tasks/models.py" />
-        <option value="$PROJECT_DIR$/appointments/admin.py" />
         <option value="$PROJECT_DIR$/tasks/admin.py" />
+        <option value="$PROJECT_DIR$/appointments/models.py" />
+        <option value="$PROJECT_DIR$/appointments/admin.py" />
       </list>
     </option>
   </component>
@@ -199,20 +206,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lindencare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appointments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,15 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appointments/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prescriptions/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="18" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
@@ -568,15 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appointments/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1368991834898" expanded="true" signature="108:1138" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="26" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
@@ -586,12 +561,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/appointments/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.7293777">
+        <state line="17" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appointments/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="210" selection-end="210" vertical-scroll-proportion="0.14761215">
+          <folding />
         </state>
       </provider>
     </entry>

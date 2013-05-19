@@ -4,6 +4,9 @@ from .models import Appointment
 
 class AppointmentAdmin(admin.ModelAdmin):
 
+    list_display = ['practice','visit_date','comment','is_complete']
+    list_filter = ['is_complete']
+
     def save_model(self, request, obj, form, change):
         """saves employee name who creates task"""
 
@@ -13,8 +16,9 @@ class AppointmentAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, **kwargs):
         """Adds employee name field for super users"""
 
-        if request.user.is_superuser:
+        if request.user.groups.filter(name='Rep Admin').count():
             self.fields = ['practice','visit_date','comment','is_complete','sales_rep']
+            self.list_display.append('sales_rep')
         else:
             self.fields = ['practice','visit_date','comment','is_complete']
         return super(AppointmentAdmin, self).get_form(request, obj, **kwargs)
@@ -23,7 +27,7 @@ class AppointmentAdmin(admin.ModelAdmin):
     def changelist_view(self, request, extra_context=None):
         """Only appointments for specific rep are shown, superuser can see all tasks"""
 
-        if not request.user.is_superuser:
+        if not request.user.groups.filter(name='Rep Admin').count():
             q = request.GET.copy()
             q['sales_rep'] = request.user
             request.GET = q

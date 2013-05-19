@@ -5,15 +5,18 @@ from practices.models import Practice
 
 
 class Appointment(models.Model):
-	practice = models.ForeignKey(Practice)
-	visit_date = models.DateTimeField()
-	comment = models.TextField(blank=True)
-	is_complete = models.BooleanField("Completed?")
-	sales_rep = models.ForeignKey(User)
+    practice = models.ForeignKey(Practice)
+    visit_date = models.DateTimeField()
+    comment = models.TextField(blank=True)
+    is_complete = models.BooleanField("Completed?")
+    sales_rep = models.ForeignKey(User)
 
-	
+    def __unicode__(self):
+        return str(self.practice) + ' ' + self.comment
+
+
 """
-	def check_visit_date_and_comment(self):
+    def check_visit_date_and_comment(self):
         if not visit_date and comment:
             raise ValidationError('Comment must be null')
 
@@ -21,6 +24,6 @@ class Appointment(models.Model):
         check_visit_date_and_comment()
 """
 
-	
+
 
 
