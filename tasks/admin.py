@@ -7,6 +7,7 @@ def mark_completed(modeladmin,request,queryset):
         queryset.update(is_completed=True)
 mark_completed.short_description = "Mark Select Tasks Completed"
 
+
 class TaskAdmin(admin.ModelAdmin):
 
     list_display = ['description','task_date','urgency','category','is_completed']
@@ -21,11 +22,10 @@ class TaskAdmin(admin.ModelAdmin):
         obj.save()
 
     def get_form(self, request, obj=None, **kwargs):
-        """Adds employee name field and shows employee in list display for Rep Admins"""
+        """Adds employee name field"""
 
         if request.user.groups.filter(name='Rep Admin').count():
             self.fields = ['task_date','is_in_schedule','description','practice','category','is_completed','sales_rep']
-            self.list_display.append('sales_rep')
         else:
             self.fields = ['task_date','is_in_schedule','description','practice','category','is_completed']
         return super(TaskAdmin, self).get_form(request, obj, **kwargs)
