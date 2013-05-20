@@ -42,6 +42,6 @@ class Task(models.Model):
         from django.core.exceptions import ValidationError
 
         if self.is_in_schedule and not self.category:
-            raise ValidationError('Must include category if urgency is high')
+            raise ValidationError('Must include category if task is in schedule')
 
 
