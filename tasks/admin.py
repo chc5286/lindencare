@@ -12,6 +12,7 @@ class TaskAdmin(admin.ModelAdmin):
 
     list_display = ['description','task_date','urgency','category','is_completed','sales_rep']
     list_filter = ['is_completed']
+    list_editable = ['is_completed','urgency']
     actions = [mark_completed]
 
     def save_model(self, request, obj, form, change):
@@ -25,9 +26,9 @@ class TaskAdmin(admin.ModelAdmin):
         """Adds employee name field"""
 
         if request.user.groups.filter(name='Rep Admin').count():
-            self.fields = ['task_date','is_in_schedule','description','practice','category','is_completed','sales_rep']
+            self.fields = ['task_date','is_in_schedule','description','urgency','practice','category','is_completed','sales_rep']
         else:
-            self.fields = ['task_date','is_in_schedule','description','practice','category','is_completed']
+            self.fields = ['task_date','is_in_schedule','description','urgency','practice','category','is_completed']
         return super(TaskAdmin, self).get_form(request, obj, **kwargs)
 
 

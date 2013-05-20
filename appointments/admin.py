@@ -6,6 +6,7 @@ class AppointmentAdmin(admin.ModelAdmin):
 
     list_filter = ['is_complete']
     list_display =  ['practice','visit_date','comment','is_complete','sales_rep']
+    list_editable = ['visit_date','is_complete']
 
     def save_model(self, request, obj, form, change):
         """saves employee name who creates task"""

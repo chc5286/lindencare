@@ -38,3 +38,10 @@ class Task(models.Model):
     def __unicode__(self):
         return self.description
 
+    def clean(self):
+        from django.core.exceptions import ValidationError
+
+        if self.is_in_schedule and not self.category:
+            raise ValidationError('Must include category if urgency is high')
+
+
