@@ -1,6 +1,7 @@
-from django.conf.urls.defaults import patterns, include, url
-from .views import hello
+from django.conf.urls import patterns, url
+
+from tasks import views
 
 urlpatterns = patterns('',
-    url(r'^hello/$', hello),
+   url('r^task',views.index,name='index')
 )
