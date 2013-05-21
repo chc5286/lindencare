@@ -12,7 +12,7 @@ class TaskAdmin(admin.ModelAdmin):
 
     list_display = ['description','task_date','urgency','category','is_completed','sales_rep']
     list_filter = ['is_completed']
-    list_editable = ['is_completed','urgency']
+    list_editable = ['is_completed','urgency','category']
     actions = [mark_completed]
 
     def save_model(self, request, obj, form, change):
