@@ -1,4 +1,5 @@
 from django.db import models
+
 from core.models import Contact, Address
 from salesreps.models import CommissionTag
 

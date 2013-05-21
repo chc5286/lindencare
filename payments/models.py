@@ -1,4 +1,5 @@
 from django.db import models
+
 from insurance.models import Payor
 from prescriptions.models import ScriptTransaction
 

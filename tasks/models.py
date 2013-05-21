@@ -1,6 +1,9 @@
 import datetime
+
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+
 from practices.models import Practice
 
 
@@ -12,6 +15,7 @@ class Category(models.Model):
 
     def __unicode__(self):
         return self.description
+
 
 class Task(models.Model):
     """Tasks for each sales rep"""
@@ -33,14 +37,11 @@ class Task(models.Model):
     category = models.ForeignKey(Category,null=True,blank=True)
     urgency = models.CharField(choices=URGENCY_CHOICES,default=LOW,max_length = 200)
     sales_rep = models.ForeignKey(User,null=True)
-    
 
     def __unicode__(self):
         return self.description
 
     def clean(self):
-        from django.core.exceptions import ValidationError
-
         if self.is_in_schedule and not self.category:
             raise ValidationError('Must include category if task is in schedule')
 

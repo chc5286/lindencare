@@ -1,4 +1,5 @@
 from django.db import models
+
 from drugcompanies.models import DrugNDC
 from salesreps.models import CommissionTag
 from practices.models import Doctor

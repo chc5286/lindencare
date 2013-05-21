@@ -1,7 +1,10 @@
 from django.contrib import admin
+
 from .models import Task, Category
 
+
 admin.site.register(Category)
+
 
 def mark_completed(modeladmin,request,queryset):
         queryset.update(is_completed=True)

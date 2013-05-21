@@ -1,4 +1,7 @@
 from django.contrib import admin
+from django.forms import TextInput
+from django.db import models
+
 from .models import Practice, MultiPractice, Category, ContactType, Doctor, PracticeContact
 
 
@@ -47,5 +50,6 @@ class PracticeAdmin(admin.ModelAdmin):
 
     list_display = ['name','sub_region','ideal_visits','potential','is_inactive']
     search_fields = ['name']
+
 
 admin.site.register(Practice, PracticeAdmin)

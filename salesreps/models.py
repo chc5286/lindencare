@@ -7,7 +7,8 @@ class CommissionTag(models.Model):
 
     def __unicode__(self):
         return self.tag
-	
+
+
 class CommissionTagSplit(models.Model):
     sales_rep = models.ForeignKey(User)
     commission_tag = models.ForeignKey(CommissionTag)
