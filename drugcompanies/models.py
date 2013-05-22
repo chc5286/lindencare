@@ -26,8 +26,8 @@ class DrugNDC(models.Model):
     name = models.CharField(max_length=150)
     drug = models.ForeignKey(Drug,null=True,blank=True)
     ndc = models.CharField("NDC",max_length=50,unique=True)
-    strength = models.IntegerField(null=True)
-    strength_units = models.CharField(max_length=100,null=True)
+    strength = models.IntegerField(null=True,blank=True)
+    strength_units = models.CharField(max_length=100,blank=True)
 
     def __unicode__(self):
         return self.name
