@@ -108,10 +108,8 @@ ROOT_URLCONF = 'lindencare.urls'
 WSGI_APPLICATION = 'lindencare.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    "C:/users/craig/documents/github/lindencare/templates"
+    "/lindencare/templates",
+    #"C:/users/craig/documents/github/lindencare/templates"
 )
 
 INSTALLED_APPS = (
