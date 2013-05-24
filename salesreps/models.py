@@ -14,5 +14,9 @@ class CommissionTagSplit(models.Model):
     commission_tag = models.ForeignKey(CommissionTag)
     commission_percent = models.FloatField()
     is_inactive = models.BooleanField()
+
+    def __unicode__(self):
+        return self.commission_percent + ' ' + str(self.commission_percent)
+
 	
 
