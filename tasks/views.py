@@ -5,8 +5,8 @@ from django.shortcuts import render
 
 from .models import Task
 
-def index(request):
-    task_list = Task.objects
+def task_list(request):
+    task_list = ['hi','go','do it']
     context = {'task_list': task_list}
-    return render(request,'tasks/index.html',context)
+    return render(request,'tasks/base.html',context)
 
