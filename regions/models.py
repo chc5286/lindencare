@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Region(models.Model):
@@ -6,6 +7,7 @@ class Region(models.Model):
 
     def __unicode__(self):
         return self.name
+
 
 class SubRegion(models.Model):
     name = models.CharField(max_length=200)
