@@ -14,6 +14,7 @@ class Person(models.Model):
         abstract = True
 
 
+"""
 class PhoneAndFax(models.Model):
     phone_regex = '^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}$'
 
@@ -22,8 +23,8 @@ class PhoneAndFax(models.Model):
 
     class Meta:
         abstract = True
-
 """
+
 class Contact(Person,PhoneAndFax):
     email = models.EmailField(blank=True)
     is_inactive = models.BooleanField("Inactive?")
@@ -31,7 +32,7 @@ class Contact(Person,PhoneAndFax):
 
     class Meta:
         abstract = True
-"""
+
 		
 class Address(models.Model):
     address = models.CharField(max_length=50,blank=True)
