@@ -25,7 +25,7 @@ class PhoneAndFax(models.Model):
         abstract = True
 """
 
-class Contact(Person,PhoneAndFax):
+class Contact(Person):
     email = models.EmailField(blank=True)
     is_inactive = models.BooleanField("Inactive?")
     comment = models.CharField(max_length=255,blank=True)
