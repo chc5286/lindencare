@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <ul>
+     {% for practice in practices %}
+        <li>{{ practice.name }} {{ practice.is_inactive }}
+            <form action = "{% url 'practices.doctors' pk=practice.pk %}">
+                <input type = "submit" value = "doctors">
+            </form>
+        </li>
+     {% endfor %}
+    </ul>
+</body>
+</html>

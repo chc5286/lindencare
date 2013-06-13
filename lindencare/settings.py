@@ -11,13 +11,10 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'google.appengine.ext.django.backends.rdbms', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'INSTANCE': 'whyonly8:lindencare',                      # Or path to database file if using sqlite3.
+	'NAME': 'lindencare',
         # The following settings are not used with sqlite3:
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
     }
 }
 
@@ -108,7 +105,7 @@ ROOT_URLCONF = 'lindencare.urls'
 WSGI_APPLICATION = 'lindencare.wsgi.application'
 
 TEMPLATE_DIRS = (
-    "/lindencare/templates",
+    "/home/craigc/lindencare/home/craigc/lindencare/lindencare/templates",
     #"C:/users/craig/documents/github/lindencare/templates"
 )
 
@@ -134,7 +131,9 @@ INSTALLED_APPS = (
 	'prescriptions',
 	'regions',
 	'patients',
-    'insurance'
+    'insurance',
+    'interactions',
+    'django_extensions'
 )
 
 # A sample logging configuration. The only tangible logging

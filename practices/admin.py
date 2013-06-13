@@ -24,7 +24,7 @@ class DoctorAdmin(admin.ModelAdmin):
         ('Comment',           {'fields':['comment']}),
         ]
 
-        list_display = ['doctorName','practice','is_inactive']
+        list_display = ['doctor_name','practice','is_inactive']
 
         search_fields = ['first_name','last_name']
 

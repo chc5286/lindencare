@@ -52,15 +52,14 @@ class ContactType(models.Model):
 
 class Doctor(Contact):
     practice = models.ForeignKey(Practice)  
-    opus_key = models.IntegerField(unique=True)
-    commission_tag = models.ForeignKey(CommissionTag,null=True)
+    opus_key = models.IntegerField(unique=True,default=1)
+    commission_tag = models.ForeignKey(CommissionTag,null=True,blank=True)
 
-    def doctorName(self):
+    def doctor_name(self):
         return 'Dr. ' + self.first_name.title() + ' ' + self.last_name.title()
-    doctorName.short_description = 'Doctor'
 
     def __unicode__(self):
-        return self.fullName
+        return self.doctor_name()
 
 
 class PracticeContact(Contact):

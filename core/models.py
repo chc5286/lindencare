@@ -14,16 +14,14 @@ class Person(models.Model):
         abstract = True
 
 
-"""
 class PhoneAndFax(models.Model):
-    phone_regex = '^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}$'
-
-    phone = models.RegexField(phone_regex,null=True,blank=True)
-    fax = models.RegexField(phone_regex,null=True,blank=True)
+    phone = models.TextField(max_length=10,null=True,blank=True)
+    extension = models.TextField(max_length=4,null=True,blank=True)
+    fax = models.TextField(max_length=10,null=True,blank=True)
 
     class Meta:
         abstract = True
-"""
+
 
 class Contact(Person):
     email = models.EmailField(blank=True)

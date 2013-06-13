@@ -25,6 +25,8 @@ class Script(models.Model):
     is_filled_by_robot = models.BooleanField()
     last_cash_posting_date = models.DateField()
     is_non_processed = models.BooleanField()
+    is_filled = models.BooleanField()
+    quantity_filled = models.IntegerField(null=True)
 
     def __unicode__(self):
         return str(self.script_number) + ' ' + str(self.refill_number)
