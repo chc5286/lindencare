@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
      {% for doctor in doctors %}
         <li>{{ doctor.doctor_name }} {{ doctor.practice }}</li>
      {% endfor %}
-</body>
-</html>
+{% endblock %}

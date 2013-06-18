@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block css %}
+        <link rel="stylesheet" type = "text/css" href="../static/css/lindencare.css"/>
+    {% endblock %}
+
+    {% block javascript %}
+    {% endblock %}
+
+    <title>{% block title %}Linden Care{% endblock %}</title>
+</head>
+<body>
+    <header id="header">
+        {% block header %}
+            <h1>Linden Care</h1>
+        {% endblock %}
+    </header>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer id="footer">
+        {% block footer %}
+            <h4>Created by CHC Development Company, Copyright 2013</h4>
+        {% endblock %}
+    </footer>
+</body>
+</html>

@@ -1,4 +1,5 @@
 from django.db import models
+
 from core.models import Contact, Address
 from salesreps.models import CommissionTag
 from drugcompanies.models import DrugRep
@@ -34,12 +35,11 @@ class Practice(Address):
     category = models.ManyToManyField(Category,null=True,blank=True)
     drug_rep = models.ManyToManyField(DrugRep,verbose_name="Drug Rep",null=True,blank=True)
     sub_region = models.ForeignKey(SubRegion,verbose_name="Sub-Region",null=True,blank=True)
-    #phone
-    #fax
 
     def __unicode__(self):
         return self.name
-	
+
+
 class ContactType(models.Model):
     description = models.CharField(max_length = 200,unique=True)
 
