@@ -4,14 +4,15 @@
     <title></title>
 </head>
 <body>
-    <ul>
+    <table border=1>
      {% for practice in practices %}
-        <li>{{ practice.name }} {{ practice.is_inactive }}
-            <form action = "{% url 'practices.doctors' pk=practice.pk %}">
+        <tr><td>{{ practice.name }}</td><td>{{ practice.is_inactive }}</td>
+           <td><form action = "{% url 'practices.doctors' pk=practice.pk %}">
                 <input type = "submit" value = "doctors">
             </form>
-        </li>
+          </td>
+        </tr>
      {% endfor %}
-    </ul>
+    </table>
 </body>
 </html>

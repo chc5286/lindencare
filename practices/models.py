@@ -1,10 +1,9 @@
 from django.db import models
 
-from core.models import Contact, Address
+from core.models import Contact, Address, PhoneAndFax
 from salesreps.models import CommissionTag
 from drugcompanies.models import DrugRep
 from regions.models import SubRegion
-
 
 class MultiPractice(models.Model):
     name = models.CharField(max_length = 200,unique=True)
@@ -52,8 +51,8 @@ class ContactType(models.Model):
 
 class Doctor(Contact):
     practice = models.ForeignKey(Practice)  
-    opus_key = models.IntegerField(unique=True,default=1)
-    commission_tag = models.ForeignKey(CommissionTag,null=True,blank=True)
+    opus_key = models.IntegerField(unique=True)
+    commission_tag = models.ForeignKey(CommissionTag,null=True)
 
     def doctor_name(self):
         return 'Dr. ' + self.first_name.title() + ' ' + self.last_name.title()

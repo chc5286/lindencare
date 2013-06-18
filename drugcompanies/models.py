@@ -42,7 +42,7 @@ class Division(models.Model):
     company = models.ForeignKey(DrugCompany)
 
     def __unicode__(self):
-        return self.name
+        return str(self.company) + ' ' + self.name
 
 
 class Manager(Contact):

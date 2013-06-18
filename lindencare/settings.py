@@ -133,7 +133,8 @@ INSTALLED_APPS = (
 	'patients',
     'insurance',
     'interactions',
-    'django_extensions'
+    'django_extensions',
+    #'south'
 )
 
 # A sample logging configuration. The only tangible logging
