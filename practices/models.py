@@ -13,7 +13,8 @@ class MultiPractice(models.Model):
 
     class Meta:
         verbose_name_plural = "Multi-Practices"
-	
+
+
 class Category(models.Model):
     description = models.CharField(max_length = 200,unique=True)
 

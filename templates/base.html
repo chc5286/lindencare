@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load staticfiles %}
     {% block css %}
-        <link rel="stylesheet" type = "text/css" href="../static/css/lindencare.css"/>
+        <link rel="stylesheet" type = "text/css" href={% static "/css/lindencare.css" %}>
     {% endblock %}
 
     {% block javascript %}

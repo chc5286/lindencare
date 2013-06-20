@@ -7,7 +7,7 @@ admin.site.register(Category)
 
 
 def mark_completed(modeladmin,request,queryset):
-        queryset.update(is_completed=True)
+    queryset.update(is_completed=True)
 mark_completed.short_description = "Mark Select Tasks Completed"
 
 

@@ -1,9 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <form id="search_practice" method = "get">
+        <label>Search Practice</label>
+        <input type="text" name="search_practice"/>
+        <input type = "submit" value = "Search">
+    </form><br/>
+
     <table id="practice_table" border=1>
       <thead>
-        <tr><th>Practice</th><th>Inactive?</th><th>doctors</th></doctors></tr>
+        <tr><th>Practice</th><th>Inactive?</th><th>Doctors</th><Doctors></tr>
       </thead>
       <tbody>
        {% for practice in practices %}
