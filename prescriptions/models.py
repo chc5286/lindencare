@@ -11,7 +11,7 @@ class Script(models.Model):
     """Model for prescriptions
     """
 
-    opus_key = models.IntegerField()
+    opus_key = models.IntegerField(null=True,blank=True)
     script_number = models.IntegerField()
     refill_number = models.IntegerField()
     date_of_service = models.DateField()
@@ -25,8 +25,8 @@ class Script(models.Model):
     is_filled_by_robot = models.BooleanField()
     last_cash_posting_date = models.DateField()
     is_non_processed = models.BooleanField()
-    is_filled = models.BooleanField()
-    quantity_filled = models.IntegerField(null=True)
+    #is_filled = models.BooleanField()
+    #quantity_filled = models.IntegerField(null=True)
 
     def __unicode__(self):
         return str(self.script_number) + ' ' + str(self.refill_number)
@@ -37,8 +37,9 @@ class ScriptTransaction(models.Model):
     in this model.
     """
 
-    opus_key = models.IntegerField()
-    opus_table = models.CharField(max_length=10)
+    opus_key = models.IntegerField(null=True,blank=True)
+    opus_table = models.CharField(max_length=10,blank=True)
+    #script = models.ForeignKey(Script)
     transaction_date = models.DateField()
     insuror = models.ForeignKey(Insuror)
     payor_order = models.IntegerField()
@@ -47,7 +48,7 @@ class ScriptTransaction(models.Model):
     amount = models.DecimalField(max_digits=10,decimal_places=2)
 
     def __unicode__(self):
-        return self.insurance #should change to related script/refill/insurance
+        return str(self.amount) #should change to related script/refill/insurance
 
     class Meta:
         verbose_name_plural = "Script Transactions"

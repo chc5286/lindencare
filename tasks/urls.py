@@ -1,7 +1,8 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import patterns, include, url
+from django.views.generic import ListView
 
-from tasks import views
+from .views import TaskListView
 
 urlpatterns = patterns('',
-   url(r'^tasks',views.task_list,name='tasks')
+    url(r'^$',TaskListView.as_view(),name='tasks'),
 )

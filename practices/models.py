@@ -1,6 +1,6 @@
 from django.db import models
 
-from core.models import Contact, Address, PhoneAndFax
+from core.models import Contact, Address
 from salesreps.models import CommissionTag
 from drugcompanies.models import DrugRep
 from regions.models import SubRegion
@@ -13,7 +13,8 @@ class MultiPractice(models.Model):
 
     class Meta:
         verbose_name_plural = "Multi-Practices"
-	
+
+
 class Category(models.Model):
     description = models.CharField(max_length = 200,unique=True)
 
@@ -38,7 +39,8 @@ class Practice(Address):
 
     def __unicode__(self):
         return self.name
-	
+
+
 class ContactType(models.Model):
     description = models.CharField(max_length = 200,unique=True)
 
@@ -51,7 +53,7 @@ class ContactType(models.Model):
 
 class Doctor(Contact):
     practice = models.ForeignKey(Practice)  
-    opus_key = models.IntegerField(unique=True)
+    opus_key = models.IntegerField(null=True,blank=True,default=1001)
     commission_tag = models.ForeignKey(CommissionTag,null=True)
 
     def doctor_name(self):
@@ -65,8 +67,8 @@ class PracticeContact(Contact):
     practice = models.ForeignKey(Practice)
     contact_type = models.ForeignKey(ContactType)
     
-    def __unicode__(self):
-        return self.fullName
+    #def __unicode__(self):
+        #return self.full_name
 
     class Meta:
         verbose_name_plural = "Practice Contacts"

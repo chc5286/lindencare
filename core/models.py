@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Person(models.Model):
     first_name = models.CharField("First Name",max_length=30)
@@ -38,6 +39,20 @@ class Address(models.Model):
     city = models.CharField(max_length=30,blank=True)
     state = models.CharField(max_length=2,blank=True)
     zip_code = models.CharField(max_length=5,blank=True)
+
+    class Meta:
+        abstract = True
+
+
+class OpusKey(models.Model):
+    opus_key = models.IntegerField(null=True)
+
+    class Meta:
+        abstract = True
+
+
+class EnteredBy(models.Model):
+    entered_by = models.ForeignKey(User)
 
     class Meta:
         abstract = True

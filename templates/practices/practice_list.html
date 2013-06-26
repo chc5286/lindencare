@@ -1,18 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <table border=1>
-     {% for practice in practices %}
-        <tr><td>{{ practice.name }}</td><td>{{ practice.is_inactive }}</td>
-           <td><form action = "{% url 'practices.doctors' pk=practice.pk %}">
-                <input type = "submit" value = "doctors">
-            </form>
-          </td>
-        </tr>
-     {% endfor %}
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form id="search_practice" method = "get">
+        <label>Search Practice</label>
+        <input type="text" name="search_practice"/>
+        <input type = "submit" value = "Search">
+    </form><br/>
+
+    <table id="practice_table" border=1>
+      <thead>
+        <tr><th>Practice</th><th>Inactive?</th><th>Doctors</th></tr>
+      </thead>
+      <tbody>
+       {% for practice in practices %}
+          <tr>
+            <td>{{ practice.name }}</td>
+            <td>{{ practice.is_inactive }}</td>
+            <td><form action = "{% url 'practices.doctors' pk=practice.pk %}">
+                   <input type = "submit" value = "Doctors">
+                </form>
+            </td>
+         </tr>
+      {% endfor %}
+     </tbody>
     </table>
-</body>
-</html>
+{% endblock %}

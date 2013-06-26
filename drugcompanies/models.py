@@ -22,7 +22,7 @@ class Drug(models.Model):
 
 
 class DrugNDC(models.Model):
-    opus_key = models.IntegerField(unique=True)
+    opus_key = models.IntegerField(null=True,blank=True,default=3)
     name = models.CharField(max_length=150)
     drug = models.ForeignKey(Drug,null=True,blank=True)
     ndc = models.CharField("NDC",max_length=50,unique=True)

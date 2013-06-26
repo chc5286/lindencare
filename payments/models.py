@@ -9,8 +9,8 @@ class Batch(models.Model):
     code = models.CharField(max_length=8)
     amount = models.DecimalField(max_digits=10,decimal_places=2)
     date_deposited = models.DateField()
-    date_added = models.DateField() #use 3rd party module for this
-    entered_by = models.ForeignKey(User)
+    date_added = models.DateField()
+    #entered_by = models.ForeignKey(User)
 
 
     def __unicode__(self):
@@ -28,7 +28,6 @@ class Check(models.Model):
     amount = models.DecimalField(max_digits=10,decimal_places=2)
     fee = models.DecimalField(max_digits=10,decimal_places=2,default=0)
     batch = models.ForeignKey(Batch,null=True,blank=True)
-    entered_by = models.ForeignKey(User)
 
     def __unicode__(self):
         return self.check_number
@@ -50,11 +49,10 @@ class PaymentTransaction(models.Model):
     amount = models.DecimalField(max_digits=10,decimal_places=2)
     payment_type = models.ForeignKey(PaymentType)
     date_received = models.DateField()
-    date_added = models.DateField() #use 3rd party module for this
-    entered_by = models.ForeignKey(User,null=True,blank=True)
+    date_added = models.DateField(auto_now_add=True) #use 3rd party module for this
 
     def __unicode__(self):
-        return self.script_transaction #script_number, refill_number, carrier_code + plan_code, amount
+        return str(self.script_transaction) #script_number, refill_number, carrier_code + plan_code, amount
 
     class Meta:
         verbose_name_plural = 'Payment Transactions'

@@ -10,13 +10,15 @@ class AppointmentAdmin(admin.ModelAdmin):
     list_editable = ['visit_date','is_complete']
 
     def save_model(self, request, obj, form, change):
-        """saves employee name who creates task"""
+        """saves employee name who creates task.
+           Rep Admins can save tasks for other reps"""
 
-        obj.sales_rep = request.user
+        if not request.user.groups.filter(name='Rep Admin').count():
+            obj.sales_rep = request.user
         obj.save()
 
     def get_form(self, request, obj=None, **kwargs):
-        """Adds employee name field for super users"""
+        """Only displays sales rep field for Rep Admins"""
 
         if request.user.groups.filter(name='Rep Admin').count():
             self.fields = ['practice','visit_date','comment','is_complete','sales_rep']
@@ -26,7 +28,8 @@ class AppointmentAdmin(admin.ModelAdmin):
 
 
     def changelist_view(self, request, extra_context=None):
-        """Only appointments for specific rep are shown, superuser can see all tasks"""
+        """Only appointments for specific rep are shown,
+           Rep admins can see all appointments"""
 
         if not request.user.groups.filter(name='Rep Admin').count():
             q = request.GET.copy()
