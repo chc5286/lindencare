@@ -5,8 +5,18 @@ from .models import Practice, Doctor, Category
 
 
 class PracticesListView(ListView):
+
     model = Practice
     context_object_name = 'practices'
+"""
+    def get_context_data(self,**kwargs):
+        context = super(PracticesListView,self).get_context_data(**kwargs)
+        for practice in context['practices']:
+            context['sums'][practice.id] = Practice.objects.filter(pk=practice.id).filter(doctors__scripts).count()
+        return context
+"""
+
+
 
 
 class PracticeDoctorListView(ListView):
@@ -18,15 +28,3 @@ class PracticeDoctorListView(ListView):
         return Doctor.objects.filter(practice=self.practice)
 
 
-class PracticeListViewSearch(PracticesListView):
-
-    def get_queryset(self):
-        queryset = super(PracticeListViewSearch,self).get_queryset()
-
-        q = self.request.get("search_practice")
-        if q:
-            return queryset.filter(practice__icontains=q)
-        return queryset
-
-class CategoryCreateView(CreateView):
-    model = Category

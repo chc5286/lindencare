@@ -10,12 +10,7 @@ class Batch(models.Model):
     amount = models.DecimalField(max_digits=10,decimal_places=2)
     date_deposited = models.DateField()
     date_added = models.DateField()
-<<<<<<< HEAD
     #entered_by = models.ForeignKey(User)
-=======
-    entered_by = models.ForeignKey(User)
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
-
 
     def __unicode__(self):
         return self.code
@@ -54,12 +49,8 @@ class PaymentTransaction(models.Model):
     amount = models.DecimalField(max_digits=10,decimal_places=2)
     payment_type = models.ForeignKey(PaymentType)
     date_received = models.DateField()
-<<<<<<< HEAD
     date_added = models.DateField(auto_now_add=True) #use 3rd party module for this
-=======
-    date_added = models.DateField() #use 3rd party module for this
     #entered_by = models.ForeignKey(User,null=True,blank=True)
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
 
     def __unicode__(self):
         return str(self.script_transaction) #script_number, refill_number, carrier_code + plan_code, amount

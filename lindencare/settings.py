@@ -1,11 +1,6 @@
-# Django settings for lindencare project.
-<<<<<<< HEAD
 from unipath import Path
 
 PROJECT_DIR = Path(__file__).ancestor(2)
-=======
-import os.path
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -16,7 +11,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
+dbs = DATABASES = {
     'default': {
         'ENGINE': 'google.appengine.ext.django.backends.rdbms',
         'INSTANCE': 'whyonly8:lindencare',
@@ -28,16 +23,13 @@ DATABASES = {
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
 
-<<<<<<< HEAD
-=======
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'America/New_York'
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
 
-TIME_ZONE = 'America/New_York'
 
 LANGUAGE_CODE = 'en-us'
 
@@ -63,16 +55,8 @@ MEDIA_ROOT = ''
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = ''
 
-<<<<<<< HEAD
-STATIC_ROOT = PROJECT_DIR.child("static")
-
-=======
-# Absolute path to the directory static files should be collected to.
-# Don't put anything in this directory yourself; store your static files
-# in apps' "static/" subdirectories and in STATICFILES_DIRS.
-# Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/home/craigc/lindencare/home/craigc/lindencare/lindencare/static'
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
+STATIC_ROOT = ''#PROJECT_DIR.child("static")
+#STATIC_ROOT = PROJECT_DIR.child("static")
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -80,7 +64,9 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-     PROJECT_DIR.child("assets"),
+    '/home/craigc/lindencare/home/craigc/lindencare/lindencare/static',
+    #PROJECT_DIR.child("static"),
+    #PROJECT_DIR.child("static"),
 )
 
 # List of finder classes that know how to find static files in
@@ -116,19 +102,11 @@ ROOT_URLCONF = 'lindencare.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'lindencare.wsgi.application'
 
-<<<<<<< HEAD
-
 
 TEMPLATE_DIRS = (
-   PROJECT_DIR.child("templates")
-=======
-PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
-
-TEMPLATE_DIRS = (
-    #PROJECT_PATH + '/templates/',
-   "/home/craigc/lindencare/home/craigc/lindencare/lindencare/templates",
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
+   PROJECT_DIR.child("templates"),
 )
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -155,6 +133,7 @@ INSTALLED_APPS = (
     'insurance',
     'interactions',
     'django_extensions',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

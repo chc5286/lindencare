@@ -5,16 +5,12 @@
     <form id="search_practice" method = "get">
         <label>Search Practice</label>
         <input type="text" name="search_practice"/>
-        <input type = "submit" value = "Search">
+        <input type = "submit" class = "btn" value = "Search">
     </form><br/>
 
-    <table id="practice_table" border=1>
+    <table id="practice_table" class = "table" border=1>
       <thead>
-<<<<<<< HEAD
         <tr><th>Practice</th><th>Inactive?</th><th>Doctors</th></tr>
-=======
-        <tr><th>Practice</th><th>Inactive?</th><th>Doctors</th><Doctors></tr>
->>>>>>> ac0def54d5df9207add7f25e0ecf04eb6f46a828
       </thead>
       <tbody>
        {% for practice in practices %}
@@ -22,7 +18,7 @@
             <td>{{ practice.name }}</td>
             <td>{{ practice.is_inactive }}</td>
             <td><form action = "{% url 'practices.doctors' pk=practice.pk %}">
-                   <input type = "submit" value = "Doctors">
+                   <input type = "submit" class = "btn" value = "Doctors">
                 </form>
             </td>
          </tr>
